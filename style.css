@@ -1,0 +1,168 @@
+* {
+  margin: 0px;
+  padding: 0px;}
+
+/*Mise en forme globale de balises*/
+
+html {
+		scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  background-color: #360940;
+  background-size: 100%;
+}
+a{
+  text-decoration:none;
+  color: inherit ;
+}
+
+/*Titre de la page*/
+
+.subtitle{
+justify-self: center;
+text-align: center;
+font-size: 15vw;
+font-family: OCR A Std, monospace;
+color: white;
+height: fit-content;
+width: 100%;
+padding-top: 15vh;
+padding-bottom: 15vh;
+background-image: linear-gradient(to bottom, #f05f57 0%, #360940 100%);
+}
+
+/*Barre de navigation*/
+
+nav{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+font-size: 200%;
+font-family: OCR A Std, monospace;
+font-weight: 100;
+color: white;
+margin-top: 2vh;
+margin-bottom: 15vh;
+}
+.navbutton{
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+.navbutton:hover{
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+  transition: border 500ms ease;
+  -webkit-transition: border 500ms ease;
+  -moz-transition: border 500ms ease;
+  -ms-transition: border 500ms ease;
+  -o-transition: border 500ms ease;
+}
+
+/*Plan de la page*/
+
+.category{
+justify-self: center;
+text-align: center;
+font-size: 200%;
+font-family: OCR A Std, monospace;
+font-weight: 100;
+color: white;
+height: fit-content;
+margin : 5vh 0 5vh 0;
+padding : 1vh 0 1vh 0;
+width: 100%;
+text-decoration: white;
+text-decoration-line: underline;
+text-underline-offset: 5px;
+text-decoration-thickness: 1px;
+background-color:#f05f57 ;
+box-shadow:  0 5px 5px #1f1514;
+}
+
+.content{
+justify-self: center;
+text-align: center;
+font-size: 125%;
+font-family: OCR A Std, monospace;
+color: white;
+height: fit-content;
+padding : 5vh 4vw 5vh 4vw;
+background-color:#360940 ;
+}
+
+/*Spécifiques aux catégories*/
+
+.platforms{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin : 0 15vw 0 15vw;
+}
+
+.platforms img {
+  display: flex;
+  justify-content: space-around;
+  height: 8vh;
+}
+
+
+.albumlist {
+display: grid;
+grid-template-columns:  1fr 1fr 1fr;
+justify-content: space-around;
+padding: 0 10vw 0 10vw;
+text-align: center;
+font-size: 1.4vw;
+font-weight: bold;
+font-family: OCR A Std, monospace;
+color: white;
+line-height: 200%;
+}
+.albumlist img {
+  width: 15vw;
+  box-shadow:  10px 10px 10px #1f1514;
+}
+
+/*Contact form*/
+
+.contact-form{
+display: flex;
+flex-direction: column;
+justify-self: center;
+width: 50vw;
+}
+
+input{
+  height: 4vh;
+  padding: 1vw ;
+  margin: 2vh 0 1vh 0;
+  font-size: 1.4vw;
+  font-family: OCR A Std, monospace;
+  color: black;
+  border-radius: 5px;
+  background-color: #e2d3e6;
+  box-shadow:  5px 5px 5px #1f1514;
+}
+
+textarea{
+  height: 12vh ;
+  padding: 1vw ;
+  margin: 2vh 0 2vh 0;
+  font-size: 1.4vw;
+  font-family: OCR A Std, monospace;
+  color: black;
+  border-radius: 5px;
+  background-color: #e2d3e6;
+  box-shadow:  5px 5px 5px #1f1514;
+}
+
+button {
+  height: 100%;
+  color: white;
+  background-color: #f05f57;
+  border-radius: 5px;
+  border-style: none;
+  margin: 2vh 0 4vh 0;
+  font-size: 150%;
+  box-shadow:  5px 5px 5px #1f1514;
+}
