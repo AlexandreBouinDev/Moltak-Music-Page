@@ -1,17 +1,24 @@
 <?php
+$message_sent = false;
+if (isset($_POST['submit']) && $_POST['mail'] != '') {
 
-if (isset($_POST['submit'])) {
-    $name = $_POST['name'];
-    $subject = $_POST['subject'];
-    $mailFrom = $_POST['mail'];
-    $message = $_POST['message'];
+    if( filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL) ){
+        $name = $_POST['name'];
+        $subject = $_POST['subject'];
+        $mailFrom = $_POST['mail'];
+        $message = $_POST['message'];
+    
+        $mailTo = "alexandre.bouin@hotmail.fr";
+        $headers = "From: ".$mailFrom;
+        $txt = "You have received an e-mail from".$name.".\n\n".$message;
+    
+    
+        mail($mailTo, $subject, $txt, $headers);
 
-    $mailTo = "alexandre.bouin@hotmail.fr";
-    $headers = "From: ".$mailFrom;
-    $txt = "You have received an e-mail from".$name.".\n\n".$message;
-
-
-    mail($mailTo, $subject, $txt, $headers);
-    header("Location: index.html");
-
+        $message_sent = true;
+    }
+else
+    $message_sent = false;
+header('Location: thankyou#contact.html');
 }
+?>

@@ -125,10 +125,13 @@ line-height: 200%;
 
 /*Contact form*/
 
+.contact-us{
+  display: flex;
+  justify-content: center;
+}
+
 .contact-form{
-display: flex;
-flex-direction: column;
-justify-self: center;
+display: grid;
 width: 50vw;
 }
 
@@ -165,4 +168,16 @@ button {
   margin: 2vh 0 4vh 0;
   font-size: 150%;
   box-shadow:  5px 5px 5px #1f1514;
+}
+
+.thankyou{
+text-align: center;
+font-size: 150%;
+font-family: OCR A Std, monospace;
+color: white;
+margin-bottom: 5vh;
+width: fit-content;
+background-color: #5fa855;
+padding : 1vh;
+transition: 1s ease-in;
 }
