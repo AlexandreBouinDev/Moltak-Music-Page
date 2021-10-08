@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.png">
     <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="mobile.css">
     <title>MOLTAK - Music Page</title>
 </head>
 <body>
@@ -32,19 +33,17 @@
     <scroll-page id="disco"></scroll-page>
     <div class="category">&nbspDiscography&nbsp</div></scroll-page>
     <div class="albumlist">
-        <div class="albumcover">Red Old Recorder (2014)</div>
-        <div class="albumcover">Project K Recoded (2021)</div>
-        <div class="albumcover">...coming soon...</div>
-        <div class="albumcover"><img src="albumcover.ror.png"></div>
-        <div class="albumcover"><img src="albumcover_pkr.jpg"></div>
-        <div class="albumcover"><img src="wip.jpg"></div>
+        <div class="albumcover">Red Old Recorder (2014) <br> <img src="albumcover.ror.png"></div>
+        <div class="albumcover">Project K Recoded (2021) <br><img src="albumcover_pkr.jpg"></div>
+        <div class="albumcover">...coming soon... <br><img src="wip.jpg"></div>
     </div>
     <scroll-page id="contact"></scroll-page>
     <div class="category">&nbspContact&nbsp</div></scroll-page>
     <div class="content">A collab ? A comment ? An idea ? Just let me know by mailing me with the form below !</div>
 
  <!--Le formulaire commence ici -->
- <script><?php if (isset($_POST) && !empty($_POST)) {
+ <script>
+ <?php if (isset($_POST) && !empty($_POST)) {
     $error = 1;
     $message = '';
     $sucmsg = '';
@@ -71,6 +70,7 @@
     }
    } ?>
 </script>
+
    <!-- Contact Us Form PHP Section -->
    <section class="contact-us"> 
        <div class="success-msg">

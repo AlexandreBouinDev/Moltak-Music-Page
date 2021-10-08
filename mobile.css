@@ -1,0 +1,62 @@
+/*Mobile view*/
+@media only screen and (max-device-width: 480px) {
+  
+ * {
+   max-width: 100%;
+   justify-content: center;
+ }
+
+  nav {
+      flex-direction: column;
+      font-size: 150%;
+      align-items: center ;
+      margin-top: 5vh;
+    }
+
+    .navbutton{
+      padding: 2vh 0 2vh 0;
+    }
+
+
+    .category {
+      font-size: 150%;
+    }
+
+    .platforms {
+      margin : 0;
+      flex-direction: column;
+    }
+    .platforms img{
+      padding-bottom : 4vh;
+      width: 30vw;
+      height: auto;
+    }
+
+    .albumlist{
+    grid-template-columns:  1fr;
+    flex-direction: column;
+    font-size: 120%;
+    }
+    .albumlist img {
+      width : 50vw;
+      margin-bottom: 4vh;
+    }
+
+    .contact-form{
+    width: 100%;
+    }
+
+    input{
+      width: 90vw;
+      font-size: 3.5vw;
+      padding: 2vw;
+    }
+
+    textarea{
+      font-size: 3.5vw;
+      padding : 2vw;
+    }
+
+
+
+}

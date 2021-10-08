@@ -18,6 +18,7 @@ a{
   color: inherit ;
 }
 
+
 /*Titre de la page*/
 
 .subtitle{
@@ -132,7 +133,9 @@ line-height: 200%;
 
 .contact-form{
 display: grid;
-width: 50vw;
+width: 80vw;
+max-width: 700px;
+margin-bottom: 10vh;
 }
 
 input{
@@ -157,6 +160,7 @@ textarea{
   border-radius: 5px;
   background-color: #e2d3e6;
   box-shadow:  5px 5px 5px #1f1514;
+  resize: vertical;
 }
 
 button {
@@ -168,16 +172,6 @@ button {
   margin: 2vh 0 4vh 0;
   font-size: 150%;
   box-shadow:  5px 5px 5px #1f1514;
+  cursor: pointer;
 }
 
-.thankyou{
-text-align: center;
-font-size: 150%;
-font-family: OCR A Std, monospace;
-color: white;
-margin-bottom: 5vh;
-width: fit-content;
-background-color: #5fa855;
-padding : 1vh;
-transition: 1s ease-in;
-}
